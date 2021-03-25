@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/develop" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fbec7c5-7359-49d6-9040-aebe29a98e23" name="Default Changelist" comment="" />
+    <list default="true" id="4fbec7c5-7359-49d6-9040-aebe29a98e23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MedicamentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/medicaments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_19_230006_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_19_230006_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,8 +216,18 @@
       <workItem from="1613766260565" duration="29054000" />
       <workItem from="1614530439350" duration="11838000" />
       <workItem from="1615487396586" duration="5246000" />
-      <workItem from="1615501979730" duration="5348000" />
+      <workItem from="1615501979730" duration="24439000" />
+      <workItem from="1616712789859" duration="715000" />
+      <workItem from="1616714048213" duration="1557000" />
     </task>
+    <task id="LOCAL-00001" summary="1er commit">
+      <created>1615838427581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615838427581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +235,49 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/develop" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1er commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1er commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="303" y="123" width="834" height="688" key="#CLI_Interpreters" timestamp="1610832004871">
@@ -194,19 +288,40 @@
       <screen x="0" y="27" width="1440" height="873" />
     </state>
     <state x="377" y="99" width="685" height="733" key="#PHP/0.27.1440.873@0.27.1440.873" timestamp="1610832005119" />
-    <state x="660" y="112" width="600" height="890" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615506111606">
+    <state x="1046" y="310" width="535" height="419" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1616631558525">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="660" y="112" width="600" height="890" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1615506111606" />
+    <state x="1046" y="310" width="535" height="419" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1616631558525" />
+    <state x="660" y="112" width="600" height="890" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1616629023211">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="591" y="100" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1718.901@0.27.1718.901" timestamp="1616275090080" />
+    <state x="660" y="112" width="600" height="890" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1616629023211" />
     <state x="693" y="303" width="534" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615241635708">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="303" width="534" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1615241635708" />
-    <state x="279" y="113" width="1022" height="734" key="SettingsEditor" timestamp="1615837839583">
+    <state x="496" y="123" width="927" height="865" key="CommitChangelistDialog2" timestamp="1615838427124">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="496" y="123" width="927" height="865" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1615838427124" />
+    <state x="1074" y="241" width="479" height="554" key="NewPhpClassDialog" timestamp="1616631561065">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1074" y="241" width="479" height="554" key="NewPhpClassDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1616631561065" />
+    <state x="757" y="479" width="405" height="152" key="NewPhpFileDialog" timestamp="1616631430128">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="757" y="479" width="405" height="152" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1616631430128" />
+    <state x="503" y="170" width="1022" height="734" key="SettingsEditor" timestamp="1616713942490">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="209" y="98" width="1022" height="734" key="SettingsEditor/0.27.1440.873@0.27.1440.873" timestamp="1610838565368" />
-    <state x="279" y="113" width="1022" height="734" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1615837839583" />
+    <state x="503" y="170" width="1022" height="734" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1616713942490" />
+    <state x="555" y="289" width="810" height="532" key="Vcs.Push.Dialog.v2" timestamp="1615838498313">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="289" width="810" height="532" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1615838498313" />
     <state x="764" y="465" width="391" height="180" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1615838079558">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

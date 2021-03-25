@@ -32,9 +32,9 @@ class RecordController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function storage(Request $request)
     {
-        dd($request->id, $request->title);
+        dd($request->id, $request->title,);
     }
 
     /**

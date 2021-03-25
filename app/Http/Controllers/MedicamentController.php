@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Products;
+use App\Models\medicaments;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class MedicamentController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,16 +24,16 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Products::inRandomOrder()->take(6)->get();
+        $medicaments = medicaments::inRandomOrder()->take(6)->get();
 
-        return view('products.index')->with('products',$products);
+        return view('products.index')->with('medicaments',$medicaments);
     }
 
     public function show($slug){
 
-        $product = Products::where('slug', $slug)->firstOrFail();
+        $medicament = medicaments::where('slug', $slug)->firstOrFail();
 
 
-        return view('products.show')->with('product', $product);
+        return view('products.show')->with('medicament', $medicament);
     }
 }

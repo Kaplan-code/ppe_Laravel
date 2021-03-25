@@ -5,7 +5,7 @@ namespace Database\Seeders;
 
 
 use Illuminate\Database\Seeder;
-use App\Models\Products;
+use App\Models\medicaments;
 
 class  ProductsTableSeeder extends Seeder
 {
@@ -19,7 +19,7 @@ class  ProductsTableSeeder extends Seeder
         $faker = Faker\Factory::cre;
 
         for ($i=0; $i<30; $i++){
-            Products::create([
+            medicaments::create([
                 'title' => $faker->sentence(15),
                 'slug' => $faker->slug,
                 'subtitle' => $faker->sentence(10),

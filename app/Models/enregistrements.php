@@ -5,9 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Products extends Model
+class enregistrements extends Model
 {
     //use HasFactory;
-    protected $table = 'products';
-
+    protected $table = 'enregistrements';
+    protected $primaryKey = 'id';
+    public $incrementing = true;
 }
