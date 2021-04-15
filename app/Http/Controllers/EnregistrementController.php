@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\enregistrements;
+use App\Models\medicaments;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-class RecordController extends Controller
+class EnregistrementController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +21,8 @@ class RecordController extends Controller
      */
     public function index()
     {
-        //
+        $enregistrements = enregistrements::all();
+        return view('enregistrement.index')->with('enregistrements', $enregistrements);
     }
 
     /**
@@ -34,7 +43,21 @@ class RecordController extends Controller
      */
     public function storage(Request $request)
     {
-        dd($request->id, $request->title,);
+        //dd($request->id, $request->title,);
+        $user = Auth()->user()->id;
+
+        if (enregistrements::where('medicament_id', $request->medicament_id)->exists()){
+            return redirect()->route('products.index')->with('success', 'Cette demande a deja été ajouté.');
+        }
+
+        DB::table('enregistrements')->insert(['user_id'=> $user, 'medecin_id'=> 3,'medicament_id'=> $request->medicament_id]);
+
+
+
+
+        return redirect()->route('products.index')->with('success', 'La demande a bien été ajouté.');
+
+
     }
 
     /**
@@ -79,6 +102,8 @@ class RecordController extends Controller
      */
     public function destroy($id)
     {
-        //
+        enregistrements::where('id', $id)->delete();
+
+        return back()->with('success', 'L\'enregistrement a bien été supprimé');
     }
 }

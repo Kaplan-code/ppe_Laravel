@@ -11,4 +11,5 @@ class enregistrements extends Model
     protected $table = 'enregistrements';
     protected $primaryKey = 'id';
     public $incrementing = true;
+
 }

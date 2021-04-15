@@ -37,4 +37,6 @@ Route::get('/home/{slug}',[App\Http\Controllers\MedicamentController::class, 'sh
 /**
  * Route page enregistrement medicament
  */
-Route::post('/recap/ajouter',[App\Http\Controllers\RecordController::class, 'storage'])->name('record.storage');
+Route::get('/enregistrement',[App\Http\Controllers\EnregistrementController::class, 'index'])->name('enregistrement.index');
+Route::post('/enregistrement/ajouter',[App\Http\Controllers\EnregistrementController::class, 'storage'])->name('enregistrement.storage');
+Route::delete('/enregistrement/{id}',[App\Http\Controllers\EnregistrementController::class, 'destroy'])->name('enregistrement.destroy');
