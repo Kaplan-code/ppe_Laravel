@@ -5,7 +5,11 @@
         <div class="col-md-6">
             <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-success">Catégorie 1</strong>
+                    <small class="d-inline-block mb-2">
+                        @foreach($medicament->categories as $categorie)
+                            {{ $categorie->nom }}
+                        @endforeach
+                    </small>
                     <h5 class="mb-0">{{ $medicament->denomination }}</h5>
 
                     <p class="mb-auto text-muted">{{ $medicament->subtitle }}</p>
@@ -20,4 +24,5 @@
         </div>
 
     @endforeach
+    {{ $medicaments->appends(request()->input())->links('pagination::bootstrap-4') }}
 @endsection

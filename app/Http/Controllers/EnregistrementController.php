@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\enregistrements;
-use App\Models\medicaments;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -14,6 +13,7 @@ class EnregistrementController extends Controller
     {
         $this->middleware('auth');
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -38,7 +38,7 @@ class EnregistrementController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function storage(Request $request)
@@ -46,13 +46,11 @@ class EnregistrementController extends Controller
         //dd($request->id, $request->title,);
         $user = Auth()->user()->id;
 
-        if (enregistrements::where('medicament_id', $request->medicament_id)->exists()){
+        if (enregistrements::where('medicament_id', $request->medicament_id)->exists()) {
             return redirect()->route('products.index')->with('success', 'Cette demande a deja été ajouté.');
         }
 
-        DB::table('enregistrements')->insert(['user_id'=> $user, 'medecin_id'=> 3,'medicament_id'=> $request->medicament_id]);
-
-
+        DB::table('enregistrements')->insert(['user_id' => $user, 'medecin_id' => $request->medecin_id, 'medicament_id' => $request->medicament_id]);
 
 
         return redirect()->route('products.index')->with('success', 'La demande a bien été ajouté.');
@@ -63,7 +61,7 @@ class EnregistrementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -74,7 +72,7 @@ class EnregistrementController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -85,8 +83,8 @@ class EnregistrementController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -97,7 +95,7 @@ class EnregistrementController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

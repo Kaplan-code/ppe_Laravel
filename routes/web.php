@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::view('contact','contact');
+Route::view('/contact','contact');
 
 
-Route::view('login','login');
+Route::view('/login','login')->name('login');
 
 
 
@@ -33,6 +33,7 @@ Auth::routes();
  */
 Route::get('/home', [App\Http\Controllers\MedicamentController::class, 'index'])->name('products.index');
 Route::get('/home/{slug}',[App\Http\Controllers\MedicamentController::class, 'show'])->name('products.show');
+Route::get('/search',[App\Http\Controllers\MedicamentController::class, 'search'])->name('products.search');
 
 /**
  * Route page enregistrement medicament
