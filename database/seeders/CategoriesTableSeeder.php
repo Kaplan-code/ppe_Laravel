@@ -23,5 +23,15 @@ class CategoriesTableSeeder extends Seeder
             'nom' => 'Efervesent',
             'slug' => 'efervesent'
         ]);
+
+        categories::create([
+            'nom' => 'Injectable',
+            'slug' => 'injectable'
+        ]);
+
+        categories::create([
+            'nom' => 'Soluble',
+            'slug' => 'soluble'
+        ]);
     }
 }

@@ -41,3 +41,8 @@ Route::get('/search',[App\Http\Controllers\MedicamentController::class, 'search'
 Route::get('/enregistrement',[App\Http\Controllers\EnregistrementController::class, 'index'])->name('enregistrement.index');
 Route::post('/enregistrement/ajouter',[App\Http\Controllers\EnregistrementController::class, 'storage'])->name('enregistrement.storage');
 Route::delete('/enregistrement/{id}',[App\Http\Controllers\EnregistrementController::class, 'destroy'])->name('enregistrement.destroy');
+
+/**
+ * Route medecin
+ */
+Route::get('/medecins',[App\Http\Controllers\MedecinController::class, 'index'])->name('medecins.index');

@@ -63,6 +63,12 @@
             <div class="col-4 pt-1">
                 <a class="link-secondary" href="{{ route('enregistrement.index') }}">Enregistrement <span
                         class="badge badge-pill badge-dark">@if(Auth()->user() ) {{ DB::table('enregistrements')->where('user_id', Auth()->user()->id)->count() }}@endif</span></a>
+                @if(\Illuminate\Support\Facades\Auth::check())
+                    @if(Auth()->user()->role_id ==2)
+                        <a class="link-secondary" href="{{ route('medecins.index') }}">   &emsp;Médecins
+                        </a>
+                    @endif
+                @endif
             </div>
             <div class="col-4 text-center">
 
@@ -70,7 +76,7 @@
             </div>
             <div class="col-4 d-flex justify-content-end align-items-center">
                 @include('partials.search')
-                @include('partials.auth')
+                @include('partials.auth')  @if(\Illuminate\Support\Facades\Auth::check()){{ DB::table('roles')->find(Auth()->user()->role_id)->libelle }} @endif
 
             </div>
         </div>
