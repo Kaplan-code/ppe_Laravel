@@ -10,7 +10,7 @@ Mise en place du fichier .env
 
 Créer une base de données et un utilisateur dans le SGBD puis compléter le fichier .env avec les informations nécessaire.
 
-Mettre a jour composer si nécessaire:
+Mettre a jour composer :
    
     composer update
 
