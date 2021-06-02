@@ -22,6 +22,7 @@ Pour commencé à utilisée l'application :
     
     php artisan serv
 
+Vous pouvez maintenant accèder au site web sur un navigateur à l'adresse : http://localhost:8000/
 
 Voici les comptes pour se connecter :
 
