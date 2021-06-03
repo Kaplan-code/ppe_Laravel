@@ -26,21 +26,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fbec7c5-7359-49d6-9040-aebe29a98e23" name="Default Changelist" comment="ajt medecin">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MedecinController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/MedecinsTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/RolesTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/UserTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/medecins/index.blade.php" afterDir="false" />
+    <list default="true" id="4fbec7c5-7359-49d6-9040-aebe29a98e23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/enregistrements.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/enregistrements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_20_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/CategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CategoriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/MedicamentsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/MedicamentsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/auth.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -231,7 +218,7 @@
       <workItem from="1619125677606" duration="1612000" />
       <workItem from="1619130345817" duration="14706000" />
       <workItem from="1619281190249" duration="21790000" />
-      <workItem from="1622227201030" duration="20450000" />
+      <workItem from="1622227201030" duration="22336000" />
     </task>
     <task id="LOCAL-00001" summary="1er commit">
       <created>1615838427581</created>
@@ -261,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622051279562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modif role et ajt list medecin">
+      <created>1622491855891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622491855891</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +309,8 @@
     <MESSAGE value="add medi et enreg" />
     <MESSAGE value="new" />
     <MESSAGE value="ajt medecin" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajt medecin" />
+    <MESSAGE value="modif role et ajt list medecin" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif role et ajt list medecin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1046" y="310" width="535" height="419" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1616631558525">
@@ -331,11 +326,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="303" width="534" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1615241635708" />
-    <state x="444" y="109" width="889" height="741" key="CommitChangelistDialog2" timestamp="1622051279001">
-      <screen x="0" y="27" width="1718" height="901" />
+    <state x="496" y="123" width="889" height="741" key="CommitChangelistDialog2" timestamp="1622491855724">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="444" y="109" width="889" height="741" key="CommitChangelistDialog2/0.27.1718.901@0.27.1718.901" timestamp="1622051279001" />
-    <state x="496" y="123" width="927" height="865" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1618502152016" />
+    <state x="496" y="123" width="927" height="865" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1622491855724" />
     <state x="95" y="122" width="1730" height="863" key="DiffContextDialog" timestamp="1618180266297">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -360,11 +355,11 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="664" height="445" key="SwitcherDM/0.27.1920.1053@0.27.1920.1053" timestamp="1622489331125" />
-    <state x="497" y="251" width="810" height="532" key="Vcs.Push.Dialog.v2" timestamp="1622051298717">
-      <screen x="0" y="27" width="1718" height="901" />
+    <state x="555" y="289" width="810" height="532" key="Vcs.Push.Dialog.v2" timestamp="1622491858386">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="497" y="251" width="810" height="532" key="Vcs.Push.Dialog.v2/0.27.1718.901@0.27.1718.901" timestamp="1622051298717" />
-    <state x="555" y="289" width="810" height="532" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1618502160477" />
+    <state x="555" y="289" width="810" height="532" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1622491858386" />
     <state x="750" y="469" width="420" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618502074440">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
