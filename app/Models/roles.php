@@ -11,4 +11,8 @@ class roles extends Model
     protected $table = 'roles';
     protected $primaryKey = 'id';
     public $incrementing = true;
+
+
+
+
 }

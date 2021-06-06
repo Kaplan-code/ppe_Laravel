@@ -102,6 +102,6 @@ class EnregistrementController extends Controller
     {
         enregistrements::where('id', $id)->delete();
 
-        return back()->with('success', 'L\'enregistrement a bien été supprimé');
+        return back()->with('success', 'Votre demande a été prise en compte');
     }
 }

@@ -52,14 +52,11 @@ class MedicamentController extends Controller
 
     public function search()
     {
-        request()->validate([
-            'q' => 'required|min:2'
-        ]);
+
 
         $q = request()->input('q');
 
         $medicaments = medicaments::where('denomination', 'like', "%$q%")
-            ->orWhere('description', 'like', "%$q%")
             ->paginate(6);
 
         return view('products.index')->with('medicaments', $medicaments);

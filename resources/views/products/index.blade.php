@@ -17,7 +17,7 @@
                     <a href="{{ route('products.show', $medicament->slug) }}" class="stretched-link btn btn-info">Consulter le medicament</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                    <img src="{{ $medicament->image }}">
+                    <img src={{ $medicament->image }} >
 
                 </div>
             </div>

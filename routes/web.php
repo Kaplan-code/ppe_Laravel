@@ -45,3 +45,10 @@ Route::delete('/enregistrement/{id}',[App\Http\Controllers\EnregistrementControl
  * Route medecin
  */
 Route::get('/medecins',[App\Http\Controllers\MedecinController::class, 'index'])->name('medecins.index');
+
+/**
+ * Route users
+ */
+Route::get('/utilisateurs',[App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+Route::get('/utilisateurs/ajouter',[App\Http\Controllers\UserController::class, 'show'])->name('users.show');
+Route::post('/utilisateurs/ajout',[App\Http\Controllers\UserController::class, 'store'])->name('users.store');

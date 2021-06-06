@@ -73,7 +73,7 @@
                                                         action="{{ route('enregistrement.destroy', $enregistrement->id) }}"
                                                         method="POST">
                                                         @csrf
-
+                                                        @method('DELETE')
                                                         <button type="submit" class="btn btn-success"><i class="far fa-caret-square-right"></i></button>
                                                     </form>
                                                 </td>

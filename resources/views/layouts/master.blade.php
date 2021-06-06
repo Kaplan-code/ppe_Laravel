@@ -63,14 +63,18 @@
             <div class="col-4 pt-1">
                 <a class="link-secondary" href="{{ route('enregistrement.index') }}">Enregistrement <span
                         class="badge badge-pill badge-dark">@if(Auth()->user() ) {{ DB::table('enregistrements')->where('user_id', Auth()->user()->id)->count() }}@endif</span></a>
-                @if(\Illuminate\Support\Facades\Auth::check())
-                    @if(Auth()->user()->role_id ==2)
+
                         <a class="link-secondary" href="{{ route('medecins.index') }}">   &emsp;Médecins
                         </a>
-                    @endif
-                @endif
+
             </div>
+            @if(\Illuminate\Support\Facades\Auth::check())
+                @if(Auth()->user()->role_id ==2)
+            <a class="link-secondary"  href={{ route('users.index') }} >Utilisateurs</a>
+                @endif
+            @endif
             <div class="col-4 text-center">
+
 
                 <a class="blog-header-logo text-dark" href="{{ route('products.index') }}">💊GSB</a>
             </div>
